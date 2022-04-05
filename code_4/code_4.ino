@@ -20,15 +20,4 @@ void loop() {
   Wire.write(C_I2C) ; // Ecriture d’un octet sur la liaison série de type I²C
   Wire.endTransmission() ; // Fin de transmission sur la liaison série de type I²C
   delay (5);
-  /*Wire.beginTransmission (I2C_Out) ; // Envoie de l'adresse du périphérique I²C
-  Wire.write(0) ; // Ecriture d’un octet sur la liaison série de type I²C
-  Wire.endTransmission() ; // Fin de transmission sur la liaison série de type I²C
-  delay (30);*/
 }
-
-
-/*void Write(byte _data) {
-  Wire.beginTransmission(I2C_Out); // Commence la transmission sur l'adresse défini plus haut
-  Wire.write(_data);              // On envoie la donnée
-  Wire.endTransmission();         // On termine la transmission
-}*/
